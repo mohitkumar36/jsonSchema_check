@@ -1,0 +1,61 @@
+{
+    "type":"array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id":{
+                "type": "integer"
+            },
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+            },
+            "hPhone":{
+                "type": "number"
+            },
+            "cPhone":{
+                "type": "number"
+            },
+            "wPhone":{
+                "type": "number"
+            },
+            "bDay": {
+                "type": "string",
+                "length": 10
+            },
+            "gId":{
+                "type": "number"
+            },
+            "fieldV":{
+                "type":"string",
+                "length": 2,
+                "enum":[
+                    "SU", "MO", "TU", "WE", "TH", "FR", "SA"
+                ]
+            }
+        },
+        "oneOf":[
+            {"required": ["bDay"]},
+            {"required": ["gId"]},
+            {"not":
+                {
+                    "anyOf":[
+                        {"required": ["bDay"]},
+                        {"required": ["gId"]}
+                    ]
+                }}
+        ],
+        "anyOf":[
+            {"required": ["hPhone"]},
+            {"required": ["cPhone"]},
+            {"required": ["wPhone"]}
+        ],
+        "required": [
+            "id",
+            "name",
+            "fieldV"
+        ]
+        
+    }
+}

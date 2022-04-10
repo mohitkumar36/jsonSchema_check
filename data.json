@@ -1,0 +1,22 @@
+{
+    "data1":[
+        {"id": 1, "name": "mohit", "hPhone": 812371269,
+         "cPhone": 128123998, "wPhone": 123123122, 
+         "gId": 65756756757, "fieldV": "SU"},
+    
+        {"id": 2, "name": "rohit", "hPhone": 812371269, 
+        "cPhone": 128123998, "wPhone": 123123122, 
+        "bDay": "12-12-2022", "fieldV": "MO"},
+    
+        {"id": 1, "name": "mohit", "hPhone": 812371269, 
+        "cPhone": 128123998, "wPhone": 123123122, 
+        "gId": 122112313212, "fieldV": "SU"},
+    
+        {"id": 1, "name": "mohit", "hPhone": 812371269, 
+        "cPhone": 128123998, "wPhone": 123123122, 
+        "bDay": "12-12-2022", "fieldV": "SU"}
+    
+    ]
+    
+    
+}
